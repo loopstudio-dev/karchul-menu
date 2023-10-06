@@ -57,15 +57,15 @@ const menuData = [
         { label: 'veg', category: 'Momo Fried', item: 'Veg Momo', price: 129 },
         { label: 'veg', category: 'Momo Fried', item: 'Paneer Momo', price: 139 },
         { label: 'non-veg', category: 'Momo Fried', item: 'Chicken Momo', price: 149 },
-        { label: 'veg', category: 'Pizza(classic)', item: 'Onion Pizza', price: 179 },
-        { label: 'veg', category: 'Pizza(classic)', item: 'Veggie Delight Pizza', price: 199 },
-        { label: 'veg', category: 'Pizza(classic)', item: 'Sweet Corn Pizza', price: 199 },
-        { label: 'veg', category: 'Pizza(classic)', item: 'Peri Peri Paneer Pizza', price: 229 },
-        { label: 'veg', category: 'Pizza(classic)', item: 'Mushroom Pizza', price: 229 },
-        { label: 'non-veg', category: 'Pizza(classic)', item: 'Peri Peri Chicken Pizza', price: 249 },
-        { label: 'non-veg', category: 'Pizza(classic)', item: 'Chipotle Chicken Pizza', price: 249 },
-        { label: 'non-veg', category: 'Pizza(classic)', item: 'Grilled Chicken Pizza', price: 279 },
-        { label: 'non-veg', category: 'Pizza(classic)', item: 'Hawaiian Chicken Pizza', price: 299 },
+        { label: 'veg', category: 'Pizza - Classic', item: 'Onion Pizza', price: 179 },
+        { label: 'veg', category: 'Pizza - Classic', item: 'Veggie Delight Pizza', price: 199 },
+        { label: 'veg', category: 'Pizza - Classic', item: 'Sweet Corn Pizza', price: 199 },
+        { label: 'veg', category: 'Pizza - Classic', item: 'Peri Peri Paneer Pizza', price: 229 },
+        { label: 'veg', category: 'Pizza - Classic', item: 'Mushroom Pizza', price: 229 },
+        { label: 'non-veg', category: 'Pizza - Classic', item: 'Peri Peri Chicken Pizza', price: 249 },
+        { label: 'non-veg', category: 'Pizza - Classic', item: 'Chipotle Chicken Pizza', price: 249 },
+        { label: 'non-veg', category: 'Pizza - Classic', item: 'Grilled Chicken Pizza', price: 279 },
+        { label: 'non-veg', category: 'Pizza - Classic', item: 'Hawaiian Chicken Pizza', price: 299 },
         { label: 'veg', category: 'Square Pan Pizza', item: 'Veggies Pizza', price: 179 },
         { label: 'veg', category: 'Square Pan Pizza', item: 'Paneer Pizza', price: 199 },
         { label: 'veg', category: 'Square Pan Pizza', item: 'Mushroom Pizza', price: 229 },
@@ -92,7 +92,6 @@ const menuData = [
     
 ];
 
-// Function to display categories and menu items
 function displayCategories() {
     const accordion = document.getElementById('menuAccordion');
     const uniqueCategories = [...new Set(menuData.map(item => item.category))];
@@ -107,7 +106,7 @@ function displayCategories() {
         // Create card header (category chicklet)
         const categoryChicklet = document.createElement('h2');
         categoryChicklet.classList.add('accordion-header');
-        categoryChicklet.setAttribute('id', `heading-${category.replace(/\s+/g, '-')}`);
+        card.appendChild(categoryChicklet);
 
         const categoryButton = document.createElement('button');
         categoryButton.classList.add('accordion-button');
@@ -124,6 +123,7 @@ function displayCategories() {
         cardBody.classList.add('accordion-collapse', 'collapse');
         cardBody.setAttribute('id', `collapse-${category.replace(/\s+/g, '-')}`);
         cardBody.setAttribute('aria-labelledby', `heading-${category.replace(/\s+/g, '-')}`);
+        card.appendChild(cardBody);
 
         const itemList = document.createElement('ul');
         itemList.classList.add('list-group');
@@ -137,12 +137,16 @@ function displayCategories() {
 
         cardBody.appendChild(itemList);
 
-        card.appendChild(categoryChicklet);
-        card.appendChild(cardBody);
-
         accordion.appendChild(card);
     });
 }
 
 // Call the displayCategories function to populate the categories and menu items
 displayCategories();
+
+// Enable Bootstrap accordion behavior
+document.addEventListener('DOMContentLoaded', function () {
+    new bootstrap.Collapse(document.querySelectorAll('.accordion-collapse'), {
+        toggle: false // Prevents multiple card bodies from being open at once
+    });
+});
