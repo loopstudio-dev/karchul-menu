@@ -1,7 +1,6 @@
 const menuData = [
         { label: "veg", category: "Coffee - Chai", item: "Americano (Hot)", price: 90 },
         { label: "veg", category: "Coffee - Chai", item: "Americano (Iced)", price: 120 },
-        { label: "veg", category: "Coffee - Chai", item: "Americano (Cold)", price: 140 },
         { label: "veg", category: "Coffee - Chai", item: "Latte (Hot)", price: 99 },
         { label: "veg", category: "Coffee - Chai", item: "Latte (Iced)", price: 129 },
         { label: "veg", category: "Coffee - Chai", item: "Latte (Cold)", price: 159 },
