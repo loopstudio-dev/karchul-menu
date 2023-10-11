@@ -34,7 +34,7 @@ const menuData = [
         { label: "veg", category: "Sandwiches", item: "Corn Cheese Sandwich", price: 110 },
         { label: "veg", category: "Sandwiches", item: "Grilled Paneer Sandwich", price: 120 },
         { label: "veg", category: "Sandwiches", item: "Mushroom Sandwich", price: 120 },
-        { label: "non-veg", category: "Sandwiches", item: "Egg & Chicken Sandwich", price: 100 },
+        { label: "non-veg", category: "Sandwiches", item: "Egg & Cheese Sandwich", price: 100 },
         { label: "non-veg", category: "Sandwiches", item: "Chicken Cheese Sandwich", price: 120 },
         { label: "non-veg", category: "Sandwiches", item: "Peri Peri Chicken Sandwich", price: 130 },
         { label: "non-veg", category: "Sandwiches", item: "Chipotle Chicken Sandwich", price: 150 },
