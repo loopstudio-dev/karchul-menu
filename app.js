@@ -79,6 +79,7 @@ const menuData = [
         { label: "non-veg", category: "K Specials", item: "Loaded Chicken", price: 249 },
         { label: "non-veg", category: "K Specials", item: "24k Ice Cream", price: 299 },
         { label: "non-veg", category: "K Specials", item: "No-Dough Chicken Pizza", price: 399 },
+        { label: "non-veg", category: "K Specials", item: "Sauced Whole Chicken", price: 599 },
         { label: "non-veg", category: "Continental Mandi", item: "2 Person", price: 499 },
         { label: "non-veg", category: "Continental Mandi", item: "4 Person", price: 799 },
         { label: "veg", category: "Fries Wraps", item: "Cheese Wraps", price: 99 },
