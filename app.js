@@ -90,6 +90,23 @@ const menuData = [
         { label: "non-veg", category: "Fries Wraps", item: "Grilled Chicken Wrap", price: 149 },
         { label: "veg", category: "Tortias", item: "Cheese", price: 129 },
         { label: "veg", category: "Tortias", item: "Chocolate", price: 99 },
+         { label: "non-veg", category: "pulav", item: "Kshatriya kodi pulav", price: 180 },
+          { label: "non-veg", category: "pulav", item: "Kshatriya prawns pulav", price: 240 },
+          { label: "non-veg", category: "pulav", item: "Kshatriya mixed pulav", price: 250 },
+          { label: "veg", category: "pulav", item: "Kshatriya veg pulav", price: 160 },
+          { label: "veg", category: "maggi", item: "veg Maggie", price: 50 },
+          { label: "veg", category: "maggi", item: "paneer maggi", price: 70 },
+          { label: "veg", category: "maggi", item: "veg cheese maggi", price: 60 },
+          { label: "veg", category: "maggi", item: "paneer cheese maggi", price: 80 },
+          { label: "non-veg", category: "maggi", item: "egg Maggi", price: 50 },
+          { label: "non-veg", category: "maggi", item: "double egg maggi", price: 60 },
+          { label: "non-veg", category: "maggi", item: "chicken maggi", price: 70 },
+          { label: "non-veg", category: "maggi", item: "chicken and egg maggi", price: 80 },
+          { label: "non-veg", category: "maggi", item: "cheese chicken maggi", price: 80 },
+          { label: "veg", category: "Korean noodles", item: "spicy veg Korean noodles", price: 90 },
+          { label: "veg", category: "Korean noodles", item: "spicy veg cheese Korean noodles", price: 99 },
+          { label: "non-veg", category: "Korean noodles", item: "spicy chicken Korean noodles", price: 99 },
+          { label: "non-veg", category: "Korean noodles", item: "spicy cheese and chicken Korean noodles", price: 109 }
         // Add more menu items as needed
     ];
 
